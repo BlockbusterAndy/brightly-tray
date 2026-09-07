@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorBrightness", "src\MonitorBrightness\MonitorBrightness.csproj", "{E5C35870-4D37-4E24-8A1B-E423B427A719}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5C35870-4D37-4E24-8A1B-E423B427A719}.Debug|x64.ActiveCfg = Debug|x64
+		{E5C35870-4D37-4E24-8A1B-E423B427A719}.Debug|x64.Build.0 = Debug|x64
+		{E5C35870-4D37-4E24-8A1B-E423B427A719}.Release|x64.ActiveCfg = Release|x64
+		{E5C35870-4D37-4E24-8A1B-E423B427A719}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
