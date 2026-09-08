@@ -1,4 +1,4 @@
-# MonitorBrightness
+# Brightly Tray - Monitor Brightness Control
 
 A lightweight Windows tray app for controlling brightness on both the laptop's built-in
 display and external monitors — including monitors that don't support real hardware
