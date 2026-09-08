@@ -3,6 +3,11 @@
 [![Build](https://github.com/BlockbusterAndy/brightly-tray/actions/workflows/build.yml/badge.svg)](https://github.com/BlockbusterAndy/brightly-tray/actions/workflows/build.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+<p>
+  <img src="docs/slider.png" alt="Brightness flyout with one slider per detected display" width="49%">
+  <img src="docs/settings.png" alt="Tray menu with hotkey step and startup settings" width="49%">
+</p>
+
 A lightweight Windows tray app for controlling brightness on both the laptop's built-in
 display and external monitors — including monitors that don't support real hardware
 brightness control.
