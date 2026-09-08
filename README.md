@@ -89,9 +89,3 @@ The result is `publish/MonitorBrightness.exe` — copy it anywhere and run it.
   automatically. This is why the project targets `net8.0-windows10.0.19041.0` rather than
   plain `net8.0-windows` — the versioned Windows SDK TFM is what makes the `StartupTask`
   WinRT API resolve at all.
-
-## Publishing to the Microsoft Store
-
-See `store-assets/` for pre-generated app icons and a reference `Package.appxmanifest`
-snippet, and the publishing guide (shared separately) for the full account-setup,
-packaging, and submission walkthrough.
