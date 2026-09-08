@@ -1,0 +1,36 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Publish self-contained exe
+        run: >
+          dotnet publish src/MonitorBrightness/MonitorBrightness.csproj -c Release -r win-x64
+          --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true
+          -o publish
+
+      - name: Zip artifact
+        run: Compress-Archive -Path publish/MonitorBrightness.exe -DestinationPath BrightlyTray-${{ github.ref_name }}-win-x64.zip
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: BrightlyTray-${{ github.ref_name }}-win-x64.zip
+          generate_release_notes: true

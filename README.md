@@ -1,5 +1,8 @@
 # Brightly Tray - Monitor Brightness Control
 
+[![Build](https://github.com/BlockbusterAndy/brightly-tray/actions/workflows/build.yml/badge.svg)](https://github.com/BlockbusterAndy/brightly-tray/actions/workflows/build.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A lightweight Windows tray app for controlling brightness on both the laptop's built-in
 display and external monitors — including monitors that don't support real hardware
 brightness control.
@@ -53,6 +56,11 @@ it's the one part of this app resting on an undocumented API.)
   nothing
 - Automatically re-detects displays on hotplug/resolution changes
 
+## Download
+
+Grab the latest self-contained `.exe` from [Releases](https://github.com/BlockbusterAndy/brightly-tray/releases) —
+no .NET install required. Otherwise, build it yourself below.
+
 ## Build & run
 
 Requires the .NET 8 SDK.
@@ -89,3 +97,13 @@ The result is `publish/MonitorBrightness.exe` — copy it anywhere and run it.
   automatically. This is why the project targets `net8.0-windows10.0.19041.0` rather than
   plain `net8.0-windows` — the versioned Windows SDK TFM is what makes the `StartupTask`
   WinRT API resolve at all.
+
+## Contributing
+
+Contributions are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for the dev setup,
+code style, and PR process. Please review the [Code of Conduct](CODE_OF_CONDUCT.md) as
+well.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
